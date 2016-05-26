@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Shrug Extension",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Shrug ¯\\_(ツ)_/¯",
   "icons": { "128": "icon.png" },
   "author": "aestrada7",
@@ -19,5 +19,14 @@
   },
   "background": {
     "scripts": ["listener.js"]
+  },
+  "commands": {
+    "pressed_browser_hotkey": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+X",
+        "mac": "Command+Shift+X"
+      },
+      "description": "Adds a shrug in the currently active field."
+    }
   }
 }
