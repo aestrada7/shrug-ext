@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "Shrug Extension",
+  "version": "1.0.0",
+  "description": "Shrug ¯\\_(ツ)_/¯",
+  "icons": { "128": "icon.png" },
+  "author": "aestrada7",
+  "offline_enabled": true,
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["listener.js"]
+  }
+}
